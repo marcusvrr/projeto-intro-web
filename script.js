@@ -4,7 +4,8 @@ const personagem1 = {
   casa: "Grifinória",
   bruxo: "Sim",
   varinha: ['azevinho', 'pena de cauda de fênix'],
-  img:"./Media/Harry Potter.jpg"
+  img:"./Media/Harry Potter.jpg",
+  link:"https://harrypotter.fandom.com/pt-br/wiki/Harry_Potter"
 };
 
 const personagem2 = {
@@ -13,7 +14,8 @@ const personagem2 = {
   casa: "Grifinória",
   bruxo: "Sim",
   varinha: ['sabugueiro', 'pelo de testrálio'],
-  img:"./Media/Alvo Dumbledore.jpg"
+  img:"./Media/Alvo Dumbledore.jpg",
+  link: "https://harrypotter.fandom.com/pt-br/wiki/Alvo_Dumbledore"
 };
 
 const personagem3 = {
@@ -22,7 +24,8 @@ const personagem3 = {
   casa: "Grifinória",
   bruxo: "Sim",
   varinha: ['videira', 'fibra de coração de dragão'],
-  img: "./Media/hermione.jpg"
+  img: "./Media/hermione.jpg",
+  link: "https://harrypotter.fandom.com/pt-br/wiki/Hermione_Granger"
 };
 
 const personagem4 = {
@@ -31,7 +34,8 @@ const personagem4 = {
   casa: "Grifinória",
   bruxo: "Sim",
   varinha: ['freixo', 'pelo de unicornio'],
-  img:"./Media/rony weasley.jpg"
+  img:"./Media/rony weasley.jpg",
+  link:"https://harrypotter.fandom.com/pt-br/wiki/Ronald_Weasley"
 };
 
 const personagem5 = {
@@ -40,7 +44,8 @@ const personagem5 = {
   casa: "Sonserina",
   bruxo: "Sim",
   varinha: ['silver lime', 'dragão'],
-  img:"./Media/Snapejpg.jpg"
+  img:"./Media/Snape.jpg",
+  link:"https://harrypotter.fandom.com/pt-br/wiki/Severo_Snape"
 };
 
 const personagem6 = {
@@ -49,7 +54,8 @@ const personagem6 = {
   casa: "Sonserina",
   bruxo: "Sim",
   varinha: ['teixo', 'pena de cauda de fênix'],
-  img: "./Media/voldemort.jpg"
+  img: "./Media/voldemort.jpg",
+  link: "https://harrypotter.fandom.com/pt-br/wiki/Tom_Riddle"
 };
 
 /*Faça um cálculo de média, entre os valores numéricos respectivos de cada item. Imprima o valor da média utilizando um console.log.
@@ -136,7 +142,7 @@ console.log('Semana 3 e 4',bruxosHp)
 
 for(let i = 0; i < bruxosHp.length; i++){
   let temporaria = bruxosHp[i].varinha.join();
-  bruxosHp[i].varinha = temporaria
+   
   console.log('Semana 5',`${bruxosHp[i].nome.toUpperCase()}`,`\n${bruxosHp[i].altura}, \n${bruxosHp[i].casa}, \n${bruxosHp[i].bruxo};\n${bruxosHp[i].varinha }`);;
 }
 
@@ -161,6 +167,31 @@ function procuraNome (array, buscaUsuario) {
   alert("nenhum item foi encontrado")
   }
 }
-console.log(procuraNome(bruxosHp,"harry"));
+console.log(procuraNome(bruxosHp, 'potter'));
+//semana11 e 12
 
 
+function pesquisa () {
+
+let conteudoPesquisa = '';
+  const resultadoPesquisa = document.getElementById('searchBar').value;
+  if (!resultadoPesquisa) {
+    alert("Digite um personagem para fazer a busca")
+  }else{
+    const bruxoPesquisado = procuraNome(bruxosHp, resultadoPesquisa)
+    console.log(bruxoPesquisado);
+
+    conteudoPesquisa = `<article class="card">
+    <div class="bruxo-imagem"><img src="${bruxoPesquisado[0].img}" alt="Desenho personagem"></div>
+    <ul> 
+        <li><a href=${bruxoPesquisado[0].link}>Nome: ${bruxoPesquisado[0].nome}</a></li>
+        <li>Altura: ${bruxoPesquisado[0].altura}</li>
+        <li>Casa: ${bruxoPesquisado[0].casa}</li>
+        <li>Bruxo: ${bruxoPesquisado[0].bruxo}</li>
+        <li>Varinha: ${bruxoPesquisado[0].varinha}</li>
+    </ul>
+  </article>`;
+document.querySelector('#container').innerHTML="";
+document.querySelector('#container').innerHTML= conteudoPesquisa;
+  } 
+}
