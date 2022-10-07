@@ -4,7 +4,7 @@ const personagem1 = {
   casa: "Grifinória",
   bruxo: "Sim",
   varinha: ['azevinho', 'pena de cauda de fênix'],
-  img: "http://images6.fanpop.com/image/photos/43400000/Harry-Potter-fan-art-harry-potter-43424936-500-613.jpg",
+  img: "https://i.pinimg.com/originals/4a/b8/b9/4ab8b92486db607956c626db43aa3a68.jpg",
   link: "https://harrypotter.fandom.com/pt-br/wiki/Harry_Potter"
 };
 

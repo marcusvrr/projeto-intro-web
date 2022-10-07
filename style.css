@@ -4,7 +4,7 @@
 }
 a {
   text-decoration: none;
-  color: aliceblue;
+  color: gold;
 }
 #myVideo{
   position: fixed; 
@@ -26,7 +26,7 @@ h1 {
   padding: 10px;
   top: 20cm;
   font-family: 'HarryP';
-  font-size: 70px;
+  font-size: 60px;
   color: goldenrod;
 }
 main{
@@ -103,7 +103,7 @@ footer a {
     height: 20vh;
   }
   h1 {
-    font-size: 55px;
+    font-size: 47px;
   }
   .container-search{
     width: 360px;
