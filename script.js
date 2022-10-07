@@ -4,7 +4,7 @@ const personagem1 = {
   casa: "Grifinória",
   bruxo: "Sim",
   varinha: ['azevinho', 'pena de cauda de fênix'],
-  img: "./Media/Harry Potter.jpg",
+  img: "http://images6.fanpop.com/image/photos/43400000/Harry-Potter-fan-art-harry-potter-43424936-500-613.jpg",
   link: "https://harrypotter.fandom.com/pt-br/wiki/Harry_Potter"
 };
 
@@ -14,7 +14,7 @@ const personagem2 = {
   casa: "Grifinória",
   bruxo: "Sim",
   varinha: ['sabugueiro', 'pelo de testrálio'],
-  img: "./Media/Alvo Dumbledore.jpg",
+  img: "https://i.pinimg.com/originals/69/9c/ba/699cba41508f95fe2e6539882024acdd.jpg",
   link: "https://harrypotter.fandom.com/pt-br/wiki/Alvo_Dumbledore"
 };
 
@@ -24,7 +24,7 @@ const personagem3 = {
   casa: "Grifinória",
   bruxo: "Sim",
   varinha: ['videira', 'fibra de coração de dragão'],
-  img: "./Media/hermione.jpg",
+  img: "https://mir-s3-cdn-cf.behance.net/project_modules/fs/89256849192035.58f2f01a4aeb4.jpg",
   link: "https://harrypotter.fandom.com/pt-br/wiki/Hermione_Granger"
 };
 
@@ -34,7 +34,7 @@ const personagem4 = {
   casa: "Grifinória",
   bruxo: "Sim",
   varinha: ['freixo', 'pelo de unicornio'],
-  img: "./Media/rony weasley.jpeg",
+  img: "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d2821b49755981.58bdff1ebedc9.jpg",
   link: "https://harrypotter.fandom.com/pt-br/wiki/Ronald_Weasley"
 };
 
@@ -44,7 +44,7 @@ const personagem5 = {
   casa: "Sonserina",
   bruxo: "Sim",
   varinha: ['silver lime', 'dragão'],
-  img: "./Media/Snape.jpg",
+  img: "https://pm1.narvii.com/6330/e3a49671308367dbad3476ad057f1aaf0f6da46b_hq.jpg",
   link: "https://harrypotter.fandom.com/pt-br/wiki/Severo_Snape"
 };
 
@@ -54,7 +54,7 @@ const personagem6 = {
   casa: "Sonserina",
   bruxo: "Sim",
   varinha: ['teixo', 'pena de cauda de fênix'],
-  img: "./Media/voldemort.jpg",
+  img: "https://i.pinimg.com/736x/56/d5/57/56d557bba34e23111bfa5561069cbad2--saga-harry-potter-harry-potter-stuff.jpg",
   link: "https://harrypotter.fandom.com/pt-br/wiki/Tom_Riddle"
 };
 

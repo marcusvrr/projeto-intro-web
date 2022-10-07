@@ -20,7 +20,7 @@ a {
 }
 header {
   background-color: black;
-  height: 10vh;
+  height: 15vh;
 }
 h1 {
   padding: 10px;
@@ -100,7 +100,7 @@ footer a {
 }
 @media screen and (max-device-width: 800px){
   header {
-    height: 15vh;
+    height: 20vh;
   }
   h1 {
     font-size: 55px;
@@ -122,9 +122,9 @@ footer a {
 }
 @media screen and (max-device-width: 360px){
   header{
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
-    height: 20vh;
+    height: 25vh;
   }
   h1 {
 
