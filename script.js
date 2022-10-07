@@ -4,8 +4,8 @@ const personagem1 = {
   casa: "Grifinória",
   bruxo: "Sim",
   varinha: ['azevinho', 'pena de cauda de fênix'],
-  img:"./Media/Harry Potter.jpg",
-  link:"https://harrypotter.fandom.com/pt-br/wiki/Harry_Potter"
+  img: "./Media/Harry Potter.jpg",
+  link: "https://harrypotter.fandom.com/pt-br/wiki/Harry_Potter"
 };
 
 const personagem2 = {
@@ -14,7 +14,7 @@ const personagem2 = {
   casa: "Grifinória",
   bruxo: "Sim",
   varinha: ['sabugueiro', 'pelo de testrálio'],
-  img:"./Media/Alvo Dumbledore.jpg",
+  img: "./Media/Alvo Dumbledore.jpg",
   link: "https://harrypotter.fandom.com/pt-br/wiki/Alvo_Dumbledore"
 };
 
@@ -34,8 +34,8 @@ const personagem4 = {
   casa: "Grifinória",
   bruxo: "Sim",
   varinha: ['freixo', 'pelo de unicornio'],
-  img:"./Media/rony weasley.jpg",
-  link:"https://harrypotter.fandom.com/pt-br/wiki/Ronald_Weasley"
+  img: "./Media/rony weasley.jpeg",
+  link: "https://harrypotter.fandom.com/pt-br/wiki/Ronald_Weasley"
 };
 
 const personagem5 = {
@@ -44,8 +44,8 @@ const personagem5 = {
   casa: "Sonserina",
   bruxo: "Sim",
   varinha: ['silver lime', 'dragão'],
-  img:"./Media/Snape.jpg",
-  link:"https://harrypotter.fandom.com/pt-br/wiki/Severo_Snape"
+  img: "./Media/Snape.jpg",
+  link: "https://harrypotter.fandom.com/pt-br/wiki/Severo_Snape"
 };
 
 const personagem6 = {
@@ -61,13 +61,13 @@ const personagem6 = {
 /*Faça um cálculo de média, entre os valores numéricos respectivos de cada item. Imprima o valor da média utilizando um console.log.
 Guarde este valor em uma const*/
 const mediaAltura = (personagem1.altura + personagem2.altura + personagem3.altura + personagem4.altura + personagem5.altura + personagem6.altura) / 6;
-console.log('Média das alturas = ',mediaAltura)
+console.log('Média das alturas = ', mediaAltura)
 
 /*Com um console.log, imprima o resultado de uma operação lógica que checa se todos os valores de variáveis booleanas
 criadas até aqui são verdadeiras.*/
 
 const verifSeBruxo = personagem1.bruxo && personagem2.bruxo && personagem3.bruxo && personagem4.bruxo && personagem5.bruxo && personagem6.bruxo;
-console.log('verificação se todos personagens são bruxos = ',verifSeBruxo); //true pq todas as const são verdadeiras.
+console.log('verificação se todos personagens são bruxos = ', verifSeBruxo); //true pq todas as const são verdadeiras.
 
 //Semana 2
 /*1. Crie pelo menos mais uma característica para o item que você criou. Esta característica deve ser um array. Mantenha o tipo de dado do array criado sempre o mesmo, isto é, se é um array de strings, só deve receber strings.
@@ -93,40 +93,40 @@ console.log(relatorio6);
 //2. Crie uma condição else, que, em caso de valor false na condição acima, exiba um **ALERT** avisando para o usuário que o item não foi adicionado, e não faça o push
 
 const bruxosHp = [];
-if(personagem1.bruxo==="Sim"){
+if (personagem1.bruxo === "Sim") {
   bruxosHp.push(personagem1);
-}else{
+} else {
   alert("Personagem não adicionado pois não é bruxo")
 }
 
-if(personagem2.bruxo==="Sim"){
+if (personagem2.bruxo === "Sim") {
   bruxosHp.push(personagem2);
-}else{
+} else {
   alert("Personagem não adicionado pois não é bruxo")
 };
 
-if(personagem3.bruxo==="Sim"){
+if (personagem3.bruxo === "Sim") {
   bruxosHp.push(personagem3);
-}else{
+} else {
   alert("Personagem não adicionado pois não é bruxo")
 };
-if(personagem4.bruxo==="Sim"){
+if (personagem4.bruxo === "Sim") {
   bruxosHp.push(personagem4);
-}else{
+} else {
   alert("Personagem não adicionado pois não é bruxo")
 };
-if(personagem5.bruxo==="Sim"){
+if (personagem5.bruxo === "Sim") {
   bruxosHp.push(personagem5);
-}else{
+} else {
   alert("Personagem não adicionado pois não é bruxo")
 };
-if(personagem6.bruxo==="Sim"){
+if (personagem6.bruxo === "Sim") {
   bruxosHp.push(personagem6);
-}else{
+} else {
   alert("Personagem não adicionado pois não é bruxo")
 };
 
-console.log('Semana 3 e 4',bruxosHp)
+console.log('Semana 3 e 4', bruxosHp)
 
 // Semana 5
 // 1. Reescrevendo o relatório criado utilizando console.log() que começamos na semana 2,
@@ -140,58 +140,64 @@ console.log('Semana 3 e 4',bruxosHp)
 
 
 
-for(let i = 0; i < bruxosHp.length; i++){
+for (let i = 0; i < bruxosHp.length; i++) {
   let temporaria = bruxosHp[i].varinha.join();
-   
-  console.log('Semana 5',`${bruxosHp[i].nome.toUpperCase()}`,`\n${bruxosHp[i].altura}, \n${bruxosHp[i].casa}, \n${bruxosHp[i].bruxo};\n${bruxosHp[i].varinha }`);;
+
+  console.log('Semana 5', `${bruxosHp[i].nome.toUpperCase()}`, `\n${bruxosHp[i].altura}, \n${bruxosHp[i].casa}, \n${bruxosHp[i].bruxo};\n${bruxosHp[i].varinha}`);;
 }
 
 //semana 6
 //1. Crie uma função que receba como parâmetro um objeto, e devolva a string do relatório com os dados do objeto.
 
 
-function relatorioSem6 (objeto) {
-  for(let i =0;i<bruxosHp.length;i++){
-    console.log("Semana 6-1",`Nome: ${objeto[i].nome.toUpperCase()} \nAltura: ${objeto[i].altura} \nCasa: ${objeto[i].casa} \nBruxo: ${objeto[i].bruxo} \nVarinha: ${objeto[i].varinha}`);
+function relatorioSem6(objeto) {
+  for (let i = 0; i < bruxosHp.length; i++) {
+    console.log("Semana 6-1", `Nome: ${objeto[i].nome.toUpperCase()} \nAltura: ${objeto[i].altura} \nCasa: ${objeto[i].casa} \nBruxo: ${objeto[i].bruxo} \nVarinha: ${objeto[i].varinha}`);
   }
 }
 relatorioSem6(bruxosHp);
 
 //2. Crie uma função que recebe um array de objetos e uma string. Esta função deve retornar um objeto, e o objeto retornado deve possuir apenas os itens que tenham o nome/título igual à string passada como parâmetro. Caso não exista um item, exiba um ALERT indicando que nenhum item foi encontrado.
 
-function procuraNome (array, buscaUsuario) {
-  const procura = array.filter((bruxo)=>bruxo.nome.toUpperCase().includes(buscaUsuario.toUpperCase()))
-  if(procura.length>=1){
+function procuraNome(array, buscaUsuario) {
+  const procura = array.filter((bruxo) => bruxo.nome.toUpperCase().includes(buscaUsuario.toUpperCase()))
+  if (procura.length >= 1) {
     return procura;
-  }else{
-  alert("nenhum item foi encontrado")
+  } else {
+    alert("nenhum item foi encontrado")
   }
 }
 console.log(procuraNome(bruxosHp, 'potter'));
 //semana11 e 12
 
+function geraCard(bruxos) {
+  document.querySelector('#container').innerHTML = "";
+  let conteudoPesquisa
+  for (const bruxo of bruxos) {
+    conteudoPesquisa = `<article class="card">
+    <div class="bruxo-imagem"><img src="${bruxo.img}" alt="Desenho personagem"></div>
+    <ul> 
+        <li><a href=${bruxo.link}>Nome: ${bruxo.nome}</a></li>
+        <li>Altura: ${bruxo.altura}</li>
+        <li>Casa: ${bruxo.casa}</li>
+        <li>Bruxo: ${bruxo.bruxo}</li>
+        <li>Varinha: ${bruxo.varinha}</li>
+    </ul>
+  </article>`;
+    document.querySelector('#container').innerHTML += conteudoPesquisa;
+  }
+}
+geraCard(bruxosHp);
 
-function pesquisa () {
+function pesquisa() {
 
-let conteudoPesquisa = '';
+  let conteudoPesquisa = '';
   const resultadoPesquisa = document.getElementById('searchBar').value;
   if (!resultadoPesquisa) {
     alert("Digite um personagem para fazer a busca")
-  }else{
+  } else {
     const bruxoPesquisado = procuraNome(bruxosHp, resultadoPesquisa)
-    console.log(bruxoPesquisado);
-
-    conteudoPesquisa = `<article class="card">
-    <div class="bruxo-imagem"><img src="${bruxoPesquisado[0].img}" alt="Desenho personagem"></div>
-    <ul> 
-        <li><a href=${bruxoPesquisado[0].link}>Nome: ${bruxoPesquisado[0].nome}</a></li>
-        <li>Altura: ${bruxoPesquisado[0].altura}</li>
-        <li>Casa: ${bruxoPesquisado[0].casa}</li>
-        <li>Bruxo: ${bruxoPesquisado[0].bruxo}</li>
-        <li>Varinha: ${bruxoPesquisado[0].varinha}</li>
-    </ul>
-  </article>`;
-document.querySelector('#container').innerHTML="";
-document.querySelector('#container').innerHTML= conteudoPesquisa;
-  } 
+    geraCard(bruxoPesquisado)
+  }
 }
+
