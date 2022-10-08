@@ -20,7 +20,7 @@ a {
 }
 header {
   background-color: black;
-  height: 15vh;
+  height: 13vh;
 }
 h1 {
   padding: 10px;
@@ -100,10 +100,10 @@ footer a {
 }
 @media screen and (max-device-width: 800px){
   header {
-    height: 20vh;
+    height: 18vh;
   }
   h1 {
-    font-size: 47px;
+    font-size: 55px;
   }
   .container-search{
     width: 360px;
@@ -124,10 +124,7 @@ footer a {
   header{
     font-size: 35px;
     text-align: center;
-    height: 25vh;
-  }
-  h1 {
-
+    height: 22vh;
   }
   .card {
     height: 175px;
